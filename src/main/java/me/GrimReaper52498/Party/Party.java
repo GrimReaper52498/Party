@@ -41,30 +41,8 @@ public class Party extends JavaPlugin {
                 Player player = (Player) sender;
 
                 for (int i = 0; i < 4; i++) {
-                    boolean flicker = false;
-/*                    boolean trail = false;
-                    int power = (int) (Math.random() * 3) + 1;
-                    int type = (int) (Math.random() * 5) + 1;
-
-                    Firework fireworks = (Firework) player.getWorld().spawnEntity(player.getLocation(), EntityType.FIREWORK);
-                    Firework fireworks2 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(1, 0, 0), EntityType.FIREWORK);
-                    Firework fireworks3 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(0, 0, 1), EntityType.FIREWORK);
-                    Firework fireworks4 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(-1, 0, 0), EntityType.FIREWORK);
-                    Firework fireworks5 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(0, 0, -1), EntityType.FIREWORK);
-
-                    FireworkMeta fireworkmeta = fireworks.getFireworkMeta();
-                    FireworkEffect effect = FireworkEffect.builder().flicker(random.nextBoolean()).withColor().withFade(*//*Whathere ?*//*).with(Color.GREEN).trail(random.nextBoolean()).build();
-                    fireworkmeta.addEffect(effect);
-                    fireworkmeta.setPower(power);
-                    fireworks.setFireworkMeta(fireworkmeta);
-                    */
-
+              
                     giveMeARocketToAutoLaunch(player);
-                    giveMeARocketToAutoLaunch(player);
-                    giveMeARocketToAutoLaunch(player);
-                    giveMeARocketToAutoLaunch(player);
-
-
                 }
 
             }
@@ -84,6 +62,11 @@ public class Party extends JavaPlugin {
         if (type == 5) typen = Type.STAR;
 
         Firework fireworks = (Firework) player.getWorld().spawnEntity(player.getLocation(), EntityType.FIREWORK);
+        Firework fireworks2 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(1, 0, 0), EntityType.FIREWORK);
+        Firework fireworks3 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(0, 0, 1), EntityType.FIREWORK);
+        Firework fireworks4 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(-1, 0, 0), EntityType.FIREWORK);
+        Firework fireworks5 = (Firework) player.getWorld().spawnEntity(player.getLocation().add(0, 0, -1), EntityType.FIREWORK);
+
         FireworkMeta fireworkmeta = fireworks.getFireworkMeta();
         FireworkEffect effect = FireworkEffect.builder().flicker(random.nextBoolean()).withColor(colorchoose()).withFade(colorchoose()).with(typen).trail(random.nextBoolean()).build();
         fireworkmeta.addEffect(effect);
