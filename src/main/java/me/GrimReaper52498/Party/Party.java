@@ -40,10 +40,14 @@ public class Party extends JavaPlugin {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
 
-                for (int i = 0; i < 4; i++) {
-              
-                    giveMeARocketToAutoLaunch(player);
+                if (player.hasPermission("party.use")) {
+                    for (int i = 0; i < 4; i++) {
+
+                        giveMeARocketToAutoLaunch(player);
+                        
+                    }
                 }
+
 
             }
         }
