@@ -44,7 +44,7 @@ public class Party extends JavaPlugin {
                     for (int i = 0; i < 4; i++) {
 
                         giveMeARocketToAutoLaunch(player);
-                        
+
                     }
                 }
 
