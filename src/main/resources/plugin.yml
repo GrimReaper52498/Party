@@ -1,0 +1,8 @@
+name: Party
+version: 1
+main: me.GrimReaper52498.Party.Party
+author: GrimReaper52498
+commands:
+    Party:
+      description: Start a party!
+      
