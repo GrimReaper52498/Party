@@ -1,5 +1,6 @@
 package me.GrimReaper52498.Party;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;
 import org.bukkit.command.Command;
@@ -46,6 +47,8 @@ public class Party extends JavaPlugin {
                         giveMeARocketToAutoLaunch(player);
 
                     }
+                }else{
+                    player.sendMessage(String.format("%s%sYou are not allowed to do that!", ChatColor.RED, ChatColor.BOLD));
                 }
 
 
